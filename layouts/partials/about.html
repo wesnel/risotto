@@ -10,7 +10,7 @@
     {{ range $item := .Site.Params.socialLinks }}
     <li>
         <a href="{{ $item.url }}" rel="me" aria-label="{{ $item.title }}" title="{{ $item.title }}">
-            <img src="{{ $item.icon | absURL }}" aria-hidden="true"></img>
+            <i href="{{ $item.icon | absURL }}" aria-hidden="true"></i>
         </a>&nbsp;
     </li>
     {{ end }}
